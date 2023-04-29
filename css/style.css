@@ -484,8 +484,6 @@ body::after {
 .header__logo {
   position: relative;
   z-index: 5;
-  padding-bottom: 113.333333%;
-  /* 68/60 */
   -webkit-transition: width 0.3s ease 0s;
   -o-transition: width 0.3s ease 0s;
   transition: width 0.3s ease 0s;
@@ -2234,6 +2232,11 @@ body::after {
 }
 
 @media (min-width: 47.99875em) {
+  .header__logo {
+    padding-bottom: 113.333333%;
+    /* 68/60 */
+  }
+
   .menu-left__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2850,6 +2853,10 @@ body::after {
     gap: 0.625rem;
   }
 
+  .header__logo {
+    height: 2.83125rem;
+  }
+
   .header__icon {
     -ms-grid-column-align: end;
         justify-self: end;
@@ -2903,6 +2910,10 @@ body::after {
 
   .menu-open .menu-right__body::before {
     left: 0;
+  }
+
+  ._header-scroll .menu-right__body::before {
+    min-height: 4.375rem;
   }
 
   .menu-right__item:not(:last-child) {
